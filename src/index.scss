@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gutters {
+  padding: 10px 60px;
+
+  @media (max-width: 970px) {
+    padding: 10px 30px;
+  }
+}
+
+// Change to mobile version at width: 900px

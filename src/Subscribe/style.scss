@@ -1,0 +1,37 @@
+section {
+    background-color: #feebe7;
+
+    .subscribe {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        > h1 {
+            font-size: 55px;
+            font-weight: 400;
+        }
+        > h1,p {
+            color: #822c08;
+            font-family: "Roboto";
+            margin-bottom: 5px;
+        }
+
+        >input {
+            height: 50px;
+            background-color: #feebe7;
+            border: 0;
+            border-bottom: 1px solid #822c08;
+            margin-top: 10px;
+
+            &::placeholder {
+                font-family: "Roboto";
+                font-size: larger;
+                color: #822c08;
+            }
+        }
+    } 
+}
