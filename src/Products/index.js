@@ -7,7 +7,7 @@ import c3 from "./carousel3.png";
 function Products() {
   return (
     <section id="products">
-      <div className="products gutters">
+      <div className="products">
         <div className="gutters">
           <img src={c2} alt="first product" />
         </div>
@@ -17,7 +17,7 @@ function Products() {
         </div>
       </div>
 
-      <div id="view" className="products gutters">
+      <div id="view" className="products">
         <div className="products-text">
           <h2>Veiw our products</h2>
           <p> Shop our beautiful handcrafted products</p>
@@ -28,7 +28,7 @@ function Products() {
         </div>
       </div>
 
-      <div id="contact" className="products gutters">
+      <div id="contact" className="products">
         <div className="gutters">
           <img src={c3} alt="first product" />
         </div>

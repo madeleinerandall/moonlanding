@@ -6,6 +6,8 @@ body {
 
 .gutters {
   padding: 10px 60px;
+  max-width: 1200px;
+  margin: auto;
 
   @media (max-width: 970px) {
     padding: 10px 30px;

@@ -1,14 +1,23 @@
 import "./style.scss";
+import { useState } from "react";
+import NavBar from "../NavBar/";
 import hamburger from "./hamburger.png";
 import facebook from "./facebook.png";
 import instagram from "./instagram.png";
 import logo from "./logo.png";
+import close from "./close.png";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  function handleMenuOpen() {
+    setMenuOpen(!menuOpen);
+    console.log("hamburger");
+  }
+
   return (
     <header>
       <div className="header gutters">
-        <img id="menu" src={hamburger} alt="hamburger" />
         <div className="logo">
           <h1>Takeawei</h1>
           <img src={logo} alt="logo" />
@@ -22,13 +31,25 @@ function Header() {
           </a>
         </div>
       </div>
-      <div>
-        <div className="box">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
+
+      <NavBar menuOpen={menuOpen} />
+
+      {menuOpen ? (
+        <img
+          onClick={handleMenuOpen}
+          className="menubar"
+          src={close}
+          style={{ height: "20px", padding: "5px" }}
+          alt="back"
+        />
+      ) : (
+        <img
+          onClick={handleMenuOpen}
+          className="menubar"
+          src={hamburger}
+          alt="menu"
+        />
+      )}
     </header>
   );
 }

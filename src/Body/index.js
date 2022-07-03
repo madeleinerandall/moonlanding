@@ -1,3 +1,4 @@
+import Hero from "../Hero/";
 import Carousel from "../Carousel/";
 import Products from "../Products/";
 import Subscribe from "../Subscribe/";
@@ -5,6 +6,7 @@ import Subscribe from "../Subscribe/";
 function Body() {
   return (
     <div>
+      <Hero />
       <Carousel />
       <Products />
       <Subscribe />

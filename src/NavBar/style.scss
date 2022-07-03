@@ -1,0 +1,45 @@
+aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(128,128,128,0.8);
+    height: 100%;
+    width: 400px;
+    // width: 100%;
+    z-index: 1;
+    transition: all linear 200ms;
+    transform: translateX(-100%);
+
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        user-select: none;
+        padding-top: 100px;
+    }
+
+    a {
+        font-size: 30px;
+        font-family: "Roboto";
+        text-decoration: none;
+        color: black;
+        padding: 15px 15px;
+        margin-bottom: 15px;
+    }
+
+    div > a:hover {
+        border-bottom: 2px solid black;
+    }
+
+    .socials {
+
+        a > img {
+            height: 40px;
+            width: auto;
+        }
+    }
+}
+.active {
+    transform: translateX(0%);
+}

@@ -31,7 +31,7 @@ function Section1() {
   }, []);
 
   return (
-    <section id="section1" className="gutters">
+    <section id="section1">
       <div className="section1">
         <h1>
           Ceramics, handmade in Australia to bring the joy of colour into your
