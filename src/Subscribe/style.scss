@@ -17,11 +17,14 @@ section {
         > h1,p {
             color: #822c08;
             font-family: "Roboto";
-            margin-bottom: 5px;
+            margin-bottom: 15px;
         }
 
-        >input {
+        >div {
+            
+            > input {
             height: 50px;
+            width: 320px;
             background-color: #feebe7;
             border: 0;
             border-bottom: 1px solid #822c08;
@@ -31,6 +34,12 @@ section {
                 font-family: "Roboto";
                 font-size: larger;
                 color: #822c08;
+            }
+        }
+            >img {
+                height: 20px;
+                width: auto;
+                cursor: pointer;
             }
         }
     } 
