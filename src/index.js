@@ -5,6 +5,7 @@ import { toast, Toaster } from "react-hot-toast";
 import "./index.scss";
 import Header from "./Header";
 import Body from "./Body";
+import Footer from "./Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +14,7 @@ root.render(
       <Header />
       <Body />
       <Toaster />
+      <Footer />
       {/* <Routes>
       </Routes> */}
     </BrowserRouter>

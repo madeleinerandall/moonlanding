@@ -1,0 +1,111 @@
+footer {
+    width: 100%;
+    background-color: #d1aadc;
+
+    .footer {
+        display: flex;
+
+        .socials {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 33%;
+            padding: 10px 10px;
+
+            .socials-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 10px;
+        
+                h1 {
+                    color: white;
+                    font-family: "Roboto";
+                    font-weight: 400;
+                    margin: 0;
+                }
+        
+                > img {
+                    height: 40px;
+                    width: auto;
+                    filter: invert(100%);
+                }
+            }
+
+            .socials-images {
+
+                a {
+                    padding: 0 10px;
+                }
+                a > img {
+                    height: 40px;
+                    width: auto;
+                    filter: invert(100%);
+                }
+            }
+        }
+
+        .takeawei {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: "Roboto";
+            font-size: medium;
+            width: 33%;
+            padding: 10px 10px;
+        }
+
+        .developer-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 33%;
+            padding: 10px 10px;
+
+            div > p {
+                font-size: medium;
+                color: brown;
+                font-family: "Roboto";
+            }
+            div > a > img {
+                height: 40px;
+                width: auto;
+                padding: 10px 10px;
+            }
+        }
+    }
+
+}
+.copyright {
+    height: 100px;
+    font-family: "Roboto";
+    background-color: #d1aadc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    nav {
+
+        > a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 10px;
+
+            &:hover {
+                color:brown;
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    > p {
+        color: white;
+    }
+}
+
