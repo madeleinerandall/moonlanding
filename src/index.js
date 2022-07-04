@@ -6,6 +6,7 @@ import "./index.scss";
 import Header from "./Header";
 import Body from "./Body";
 import Contact from "./Contact";
+import ProductPage from "./ProductPage";
 import Footer from "./Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -16,6 +17,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Body />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="products" element={<ProductPage />} />
       </Routes>
       <Toaster />
       <Footer />

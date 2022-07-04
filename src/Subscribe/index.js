@@ -12,10 +12,10 @@ function Subscribe() {
       <div className="subscribe gutters">
         <h1>Stay in touch</h1>
         <p>Subscribe to keep up to date with the latest news.</p>
-        <div>
-          <input placeholder="Email" type="text" />
-          <img onClick={alert} src={arrow} alt="" />
-        </div>
+        <form>
+          <input placeholder="Email" type="email" />
+          <img onClick={alert} type="submit" src={arrow} alt="arrow" />
+        </form>
       </div>
     </section>
   );

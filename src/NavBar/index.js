@@ -9,7 +9,7 @@ function NavBar({ menuOpen }) {
       <div>
         <Link to="/">Home</Link>
         <Link to="/">Product</Link>
-        <Link to="/">Contact</Link>
+        <Link to="contact">Contact</Link>
         <div className="socials">
           <a href="https://www.facebook.com/hellotakeawei">
             <img src={facebook} alt="facebook" />
