@@ -21,7 +21,9 @@ function Products() {
         <div className="products-text">
           <h2>Veiw our products</h2>
           <p> Shop our beautiful handcrafted products</p>
-          <Link to="/">SHOP</Link>
+          <Link id="link" to="/">
+            SHOP
+          </Link>
         </div>
         <div className="gutters">
           <img src={c1} alt="first product" />
@@ -34,7 +36,9 @@ function Products() {
         </div>
         <div className="products-text">
           <h2>Contact us</h2>
-          <p>Find all our contact details here</p>
+          <Link id="contact-link" to="contact">
+            Find all our contact details here
+          </Link>
         </div>
       </div>
     </section>

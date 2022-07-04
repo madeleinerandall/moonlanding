@@ -39,7 +39,7 @@ function Header() {
           onClick={handleMenuOpen}
           className="menubar"
           src={close}
-          style={{ height: "20px", padding: "5px" }}
+          style={{ height: "20px", padding: "5px", filter: "invert(0)" }}
           alt="back"
         />
       ) : (

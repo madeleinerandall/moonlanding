@@ -1,6 +1,7 @@
 #hero {
     height: 55vw;
     width: 100%;
+    position: relative;
     background-image: url("hero-desktop.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,7 +9,7 @@
 }
 .box {
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
 

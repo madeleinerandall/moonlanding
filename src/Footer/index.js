@@ -71,7 +71,7 @@ function Footer() {
         <nav>
           <Link to="/">Home</Link>
           <Link to="/">Products</Link>
-          <Link to="/">Contact</Link>
+          <Link to="contact">Contact</Link>
         </nav>
         <p>© 2022 Madeleine Randall</p>
       </section>

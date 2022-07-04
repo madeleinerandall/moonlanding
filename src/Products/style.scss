@@ -38,7 +38,20 @@
         color: white;
     }
 
-    .products-text > a {
+    #contact-link {
+        font-family: "Roboto";
+        font-size: 20px;
+        font-weight: 300;
+        text-decoration: none;
+        color: white;
+        margin-top: 20px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .products-text > #link {
         font-family: "Roboto";
         font-size: 15px;
         text-decoration: none;

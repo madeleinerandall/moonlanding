@@ -1,23 +1,27 @@
 header {
     // https://create-react-app.dev/docs/adding-images-fonts-and-files
     position: fixed;
-    height: 40vw;
+    height: 100px;
     width: 100%;
+    z-index: 1;
     
     > .menubar {
       position: fixed;
       top: 50px;
-      left: 30px;
+      left: 60px;
       height: 30px;
       width: auto;
       z-index: 2;
       cursor: pointer;
       filter: invert(100%);
       transform: translateY(-50%);
+
+      @media (max-width: 970px) {
+        left: 30px;
+      }
   }
 
     .header {
-        position: relative;
         height: 100px;
         width: 100%;
         max-width: 100vw;

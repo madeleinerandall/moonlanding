@@ -1,0 +1,98 @@
+.header-section {
+    height: 110px;
+    width: 100%;
+    background-color: #d1aadc;
+}
+#contact {
+    background-color: #feeae7;
+}
+
+.contact {
+    max-width: 600px;
+    margin: auto;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    > h1 {
+        color: #822c08;
+        font-size: 70px;
+        font-family: "Roboto";
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    > h3, p {
+        color: #822c08;
+        font-family: "Roboto";
+        margin-bottom: 10px;
+    }
+
+    > h3 {
+        font-weight: 500;
+    }
+
+    > p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+
+    > input {
+        color: #822c08;
+        font-family: "Roboto";
+        font-size: 16px;
+        background-color: #feeae7;
+        border-width: 0.5px;
+        border-color:#822c08;
+        border-style: solid;
+        width: 100%;
+        padding: 20px 20px;
+        margin: 9px 0px;
+
+        &:first-child {
+            margin-top: 30px;
+        }
+
+        ::placeholder {
+            color: #822c08;
+            font-family: "Roboto";
+        }
+    }
+
+    > a {
+        font-size: 13px;
+        font-family: "Roboto";
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        background-color: #822c08;
+        width: 100%;
+        transition: 200ms;
+        padding: 20px 15px;
+        margin: 35px 0 60px 0;
+
+        &:hover {
+            color: #822c08;
+            background-color: #feeae7;
+            border: 1px solid #822c08;
+        }
+    }
+}
