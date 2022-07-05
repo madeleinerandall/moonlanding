@@ -1,47 +1,92 @@
 #hero {
-    height: 55vw;
-    width: 100%;
-    position: relative;
-    background-image: url("hero-desktop.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  height: 55vw;
+  width: 100%;
+  position: relative;
+  background-image: url("hero-desktop.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (max-width: 500px) {
+    height: 153vw;
+    background-image: url("hero-mobile.jpeg");
+  }
+  @media (max-width: 414px) {
+    height: 186vw;
+  }
 }
+
+
 .box {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    span {
-        display: block;
-        width: 20px;
-        height: 20px;
-        border-bottom: 2.5px solid white;
-        border-right: 2.5px solid white;
-        transform: rotate(45deg);
-        margin: -10px;
-        animation: animate 2s infinite;
-      }
+  @media (max-width: 500px) {
+    top: 88%;
+  }
+  @media (max-width: 414px) {
+    display: none;
+  }
+
+  span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2.5px solid white;
+    border-right: 2.5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
       
-      span:nth-child(2) {
-        animation-delay: -0.2s;
-      }
+    span:nth-child(2) {
+      animation-delay: -0.2s;
+    }
 
-      span:nth-child(3) {
-        animation-delay: -0.4s;
+    span:nth-child(3) {
+      animation-delay: -0.4s;
+    }
+    @keyframes animate {
+      0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
       }
-      @keyframes animate {
-        0% {
-          opacity: 0;
-          transform: rotate(45deg) translate(-20px, -20px);
-        }
-        50% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-          transform: rotate(45deg) translate(20px, 20px);
-        }
-    } 
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+      }
+    }
+  }
+}
+.call-to-action-button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: 415px) {
+    display: none;
+  }
+
+  > button {
+    height: 80px;
+    width: 325px;
+    background-color: #feeae7;
+    color: #822c08;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    font-family: "Roboto";
+    letter-spacing: .13em;
+    padding: 15px 15px;
+
+    &:hover {
+      background-color: #822c08;
+      color:#feeae7;
+  }
+  }
 }
