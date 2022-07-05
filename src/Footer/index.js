@@ -53,8 +53,11 @@ function Footer() {
               This website has been created using HTML, SCSS and JavaScript
               languages in React. All code is available in GitHub, which was
               updated and managed using a UNIX terminal. The app is desktop,
-              tablet and mobile responsive. All buttons are functional, so
-              please test them out!
+              tablet and mobile responsive. I have designed and built this app
+              myself reflecting on the style choices from the original Takeawei
+              © website. I have completely styled all pages, including buttons
+              and forms myself - the only library used is the carousel. All
+              buttons are functional UI's, so please test them out!
             </p>
           </div>
           <div>
@@ -70,7 +73,7 @@ function Footer() {
       <section className="copyright gutters">
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/">Products</Link>
+          <Link to="products">Products</Link>
           <Link to="contact">Contact</Link>
         </nav>
         <p>© 2022 Madeleine Randall</p>

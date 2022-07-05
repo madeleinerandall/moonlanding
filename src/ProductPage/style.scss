@@ -82,6 +82,12 @@
         > button {
             cursor: pointer;
             width: 70%;
+            transition: 250ms;
+
+            &:hover {
+                background-color: #822c08;
+                color:#feeae7;
+            }
         }
    }
 
@@ -95,8 +101,14 @@
            letter-spacing: .13em;
            border: 2px solid #822c08;
            background-color: #822c08;
+           transition: 250ms;
            width: 100%;
            padding: 15px 15px;
+
+           &:hover {
+            background-color: #feeae7;
+            color: #822c08;
+           }
        }
    }
    #shipping-info {

@@ -8,7 +8,7 @@ function NavBar({ menuOpen }) {
     <aside className={menuOpen ? "active" : ""}>
       <div>
         <Link to="/">Home</Link>
-        <Link to="/">Product</Link>
+        <Link to="products">Product</Link>
         <Link to="contact">Contact</Link>
         <div className="socials">
           <a href="https://www.facebook.com/hellotakeawei">

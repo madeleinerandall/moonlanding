@@ -1,5 +1,6 @@
 import "./style.scss";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import NavBar from "../NavBar/";
 import hamburger from "./hamburger.png";
 import facebook from "./facebook.png";
@@ -19,8 +20,12 @@ function Header() {
     <header>
       <div className="header gutters">
         <div className="logo">
-          <h1>Takeawei</h1>
-          <img src={logo} alt="logo" />
+          <Link to="/">
+            <h1>Takeawei</h1>
+          </Link>
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
         <div className="socials">
           <a href="https://www.facebook.com/hellotakeawei">

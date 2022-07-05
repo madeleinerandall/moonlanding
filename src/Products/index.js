@@ -21,7 +21,7 @@ function Products() {
         <div className="products-text">
           <h2>Veiw our products</h2>
           <p> Shop our beautiful handcrafted products</p>
-          <Link id="link" to="/">
+          <Link id="link" to="products">
             SHOP
           </Link>
         </div>
