@@ -8,6 +8,9 @@ function Hero() {
         <span></span>
         <span></span>
       </div>
+      <div className="call-to-action-button">
+        <button id="call-to-action-button">SHOP PRODUCTS</button>
+      </div>
     </section>
   );
 }

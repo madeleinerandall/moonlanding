@@ -18,10 +18,10 @@ function Products() {
       </div>
 
       <div id="view" className="products">
-        <div className="products-text">
-          <h2>Veiw our products</h2>
+        <div className="products-text gutters">
+          <h2>View our products</h2>
           <p> Shop our beautiful handcrafted products</p>
-          <Link id="link" to="/">
+          <Link id="link" to="products">
             SHOP
           </Link>
         </div>
