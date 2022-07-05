@@ -9,6 +9,10 @@
     padding-top: 0;
     padding-bottom: 0;
 
+    @media (max-width: 900px) {
+        flex-direction: column-reverse;
+    }
+
     > div {
         display: flex;
         justify-content: center;
@@ -18,17 +22,24 @@
     > div > img {
         height: 350px;
         width: auto;
+
+        @media (max-width: 900px) {
+            height: 250px;
+        }
     }
 
     .products-text {
         flex-direction: column;
+        text-align: center;
+        width: 365px;
+        margin: auto;
     }
     .products-text > h2 {
         font-family: "Roboto";
         font-size: 45px;
         font-weight: 400;
         color: white;
-        margin: 0 0 5px 0;
+        margin: 0 0 20px 0;
     }
 
     .products-text > p {
@@ -44,7 +55,6 @@
         font-weight: 300;
         text-decoration: none;
         color: white;
-        margin-top: 20px;
 
         &:hover {
             text-decoration: underline;
@@ -62,7 +72,7 @@
         background-color: #8c69aa;
         transition: 250ms;
         padding: 15px 32px;
-        margin-top: 15px;
+        margin-top: 20px;
 
         &:hover {
             color: #822c08;
@@ -72,7 +82,13 @@
 }
 #view {
     background-color: #8c69aa;
+
+    @media (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
+
 #contact {
     background-color: #822c08;
 }
