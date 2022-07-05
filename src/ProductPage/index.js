@@ -26,13 +26,17 @@ function ProductPage() {
             <input type="text" />
             <button>ADD TO CART</button>
           </div>
-          <div id="buy-now">
+          <div id="buy-now-button">
             <button>BUY IT NOW</button>
           </div>
-          <div>
-            <img src={tick} alt="tick" />
-            <span>Worldwide shipping or instore pickup available</span>
-            <p>Usually ready in 1 hour</p>
+          <div id="shipping-info">
+            <div>
+              <img src={tick} alt="tick" />
+            </div>
+            <div>
+              <span>Worldwide shipping or instore pickup available</span>
+              <p>Usually ready in 1 hour</p>
+            </div>
           </div>
         </div>
       </div>
