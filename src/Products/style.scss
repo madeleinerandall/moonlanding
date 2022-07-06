@@ -9,7 +9,7 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    @media (max-width: 900px) {
+    @media (max-width: 1049px) {
         flex-direction: column-reverse;
     }
 
@@ -23,7 +23,7 @@
         height: 350px;
         width: auto;
 
-        @media (max-width: 900px) {
+        @media (max-width: 1049px) {
             height: 250px;
         }
 
@@ -35,12 +35,13 @@
     .products-text {
         flex-direction: column;
         text-align: center;
-        width: 365px;
+        max-width: 100%;
         margin: auto;
 
-        @media (max-width: 383px) {
-            width: 300px;
+        @media (max-width: 1040px) {
+            width: 425px;
         }
+        
     }
     .products-text > h2 {
         font-family: "Roboto";
@@ -91,9 +92,11 @@
 #view {
     background-color: #8c69aa;
 
-    @media (max-width: 900px) {
+    @media (max-width: 1049px) {
         display: flex;
         flex-direction: column;
+        padding-top: 15px;
+        padding-bottom: 25px;
     }
 }
 

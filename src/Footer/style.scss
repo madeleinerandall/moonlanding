@@ -5,7 +5,7 @@ footer {
     .footer {
         display: flex;
 
-        @media (max-width: 414px) {
+        @media (max-width: 540px) {
             display: block;
         }
 
@@ -17,7 +17,7 @@ footer {
             width: 33%;
             padding: 10px 10px;
 
-            @media (max-width: 414px) {
+            @media (max-width: 540px) {
                 margin: auto;
             }
 
@@ -44,7 +44,7 @@ footer {
 
             .socials-images {
 
-                @media (max-width: 414px) {
+                @media (max-width: 540px) {
                     display: flex;
                 }
 
@@ -70,7 +70,7 @@ footer {
             width: 33%;
             padding: 10px 10px;
 
-            @media (max-width: 414px) {
+            @media (max-width: 540px) {
                 width: 100%;
                 text-align: center;
                 padding: 0;
@@ -85,7 +85,7 @@ footer {
             width: 33%;
             padding: 10px 10px;
 
-            @media (max-width: 414px) {
+            @media (max-width: 540px) {
                 width: 100%;
                 text-align: center;
                 padding: 0;
@@ -114,7 +114,7 @@ footer {
     align-items: center;
     margin: auto;
 
-    @media (max-width: 383px) {
+    @media (max-width: 412px) {
         display: block;
         text-align: center;
     }
