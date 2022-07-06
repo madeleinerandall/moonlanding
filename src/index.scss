@@ -5,12 +5,16 @@ body {
 }
 
 .gutters {
-  padding: 10px 60px;
+  box-sizing: border-box;
   max-width: 1200px;
+  padding: 10px 60px;
   margin: auto;
 
-  @media (max-width: 970px) {
+  @media (max-width: 1049px) {
     padding: 10px 30px;
+  }
+  @media (max-width: 414px) {
+    padding: 10px 10px;
   }
 }
 

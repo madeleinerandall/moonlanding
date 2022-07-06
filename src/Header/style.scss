@@ -33,6 +33,10 @@ header {
         font-family: "Roboto";
         font-size: large;
 
+        @media (max-width: 910px) {
+          background-color: rgba(215, 176, 226, 0.5);
+        }
+
         .logo {
             position: absolute;
             left: 50%;

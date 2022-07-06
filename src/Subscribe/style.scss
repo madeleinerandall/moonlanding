@@ -3,16 +3,23 @@ section {
 
     .subscribe {
         height: 300px;
+        text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 40px;
+        padding-bottom: 80px;
 
         > h1 {
             font-size: 55px;
             font-weight: 400;
+
+            @media (max-width: 414px) {
+                font-size: 48px;
+                margin-top: 15px;
+            }
+            
         }
         > h1,p {
             color: #822c08;
@@ -31,6 +38,10 @@ section {
             border: 0;
             border-bottom: 1px solid #822c08;
             margin-top: 10px;
+
+            @media (max-width: 414px) {
+                width: 225px;
+            }
 
             &::placeholder {
                 font-family: "Roboto";

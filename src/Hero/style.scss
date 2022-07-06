@@ -84,6 +84,11 @@
     letter-spacing: .13em;
     padding: 15px 15px;
 
+    @media (max-width: 350px) {
+      width: 305px;
+    } 
+    
+
     &:hover {
       background-color: #822c08;
       color:#feeae7;
