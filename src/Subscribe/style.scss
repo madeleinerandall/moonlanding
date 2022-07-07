@@ -31,13 +31,16 @@ section {
             display: flex;
             align-items: center;
             
-            > input {
+            > input[type=email] {
             height: 50px;
             width: 320px;
             background-color: #feebe7;
+            box-sizing: border-box;
+            padding: 0 10px;
             border: 0;
             border-bottom: 1px solid #822c08;
             margin-top: 10px;
+            font-size: 16px;
 
             @media (max-width: 414px) {
                 width: 225px;
@@ -45,14 +48,22 @@ section {
 
             &::placeholder {
                 font-family: "Roboto";
-                font-size: larger;
+                font-size: 16px;
                 color: #822c08;
             }
         }
-            >img {
-                height: 20px;
-                width: auto;
+            >input[type=submit] {
+                height: 50px;
+                width: 30px;
                 cursor: pointer;
+                border: none;
+                margin-top: 10px;
+                margin-left: 1px;
+                background-color: transparent;
+                background-image: url("./arrow.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
             }
         }
     } 
