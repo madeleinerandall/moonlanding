@@ -26,7 +26,7 @@ footer {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 10px 10px;
+                padding-bottom: 10px;
         
                 h1 {
                     color: white;
@@ -50,11 +50,12 @@ footer {
 
                 a {
                     padding: 0 10px;
-                }
-                a > img {
-                    height: 40px;
-                    width: auto;
-                    filter: invert(100%);
+
+                    > img {
+                        height: 40px;
+                        width: auto;
+                        filter: invert(100%);
+                    }
                 }
             }
         }
@@ -67,6 +68,7 @@ footer {
             color: white;
             font-family: "Roboto";
             font-size: medium;
+            text-align: center;
             width: 33%;
             padding: 10px 10px;
 
@@ -78,11 +80,13 @@ footer {
         }
 
         .developer-info {
+            height: 277px;
+            width: 33%;
+            text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            width: 33%;
             padding: 10px 10px;
 
             @media (max-width: 540px) {
@@ -93,13 +97,13 @@ footer {
 
             div > p {
                 font-size: medium;
-                color: brown;
+                color: #822c08;
                 font-family: "Roboto";
             }
             div > a > img {
                 height: 40px;
                 width: auto;
-                padding: 10px 10px;
+                padding: 0px 10px 0px 10px;
             }
         }
     }
@@ -118,16 +122,16 @@ footer {
         display: block;
         text-align: center;
     }
-
+    
     nav {
 
         > a {
             color: white;
             text-decoration: none;
-            padding: 10px 10px;
+            padding: 15px 10px;
 
             &:hover {
-                color:brown;
+                color:#822c08;
                 text-decoration: underline;
             }
         }
@@ -135,6 +139,7 @@ footer {
     
     > p {
         color: white;
+        padding-top: 15px;
     }
 }
 

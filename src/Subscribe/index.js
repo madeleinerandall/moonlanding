@@ -1,20 +1,32 @@
 import "./style.scss";
-import arrow from "./arrow.png";
 import toast from "react-hot-toast";
 
 function Subscribe() {
-  function alert() {
-    toast.error("This is a fake button. Thank you for wanting to subscribe!!");
+  function handleSubmit(e) {
+    e.preventDefault();
+    const emailEl = document.getElementById("email");
+    fetch("https://httpbin.org/post", {
+      method: "POST",
+      body: JSON.stringify({ email: emailEl.value }),
+    }).then((data) => {
+      toast.success(
+        "Thank you for subscribing! Email address has been sent to https://httpbin.org/post as a demonstration of POSTing data to an API."
+      );
+      emailEl.value = "";
+    });
   }
 
   return (
     <section>
       <div className="subscribe gutters">
         <h1>Stay in touch</h1>
-        <p>Subscribe to keep up to date with the latest news.</p>
-        <form>
-          <input placeholder="Email" type="email" />
-          <img onClick={alert} type="submit" src={arrow} alt="arrow" />
+        <p>
+          Subscribe to test this functionality. Data will be POSTed to
+          https://httpbin.org/post.{" "}
+        </p>
+        <form onSubmit={handleSubmit}>
+          <input id="email" placeholder="Email" type="email" required />
+          <input type="submit" value="" />
         </form>
       </div>
     </section>

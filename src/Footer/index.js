@@ -53,11 +53,12 @@ function Footer() {
               This website has been created using HTML, SCSS and JavaScript
               languages in React. All code is available in GitHub, which was
               updated and managed using a UNIX terminal. The app is desktop,
-              tablet and mobile responsive. I have designed and built this app
-              myself reflecting on the style choices from the original Takeawei
-              © website. I have completely styled all pages, including buttons
-              and forms myself - the only library used is the carousel. All
-              buttons are functional UI's, so please test them out!
+              tablet and mobile responsive (320px devices and above). I have
+              designed and built this app myself reflecting on the style choices
+              from the original Takeawei © website. I have completely styled all
+              pages, including buttons and forms myself - the only library used
+              is the carousel. All buttons are functional UI's, so please test
+              them out!
             </p>
           </div>
           <div>

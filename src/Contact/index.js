@@ -23,7 +23,13 @@ function Contact() {
           <form className="form">
             <input placeholder="Name" type="text" class="required" />
             <input placeholder="Email" type="email" class="required" />
-            <input placeholder="Messsage" type="text" class="required" />
+            <textarea
+              placeholder="Messsage"
+              type="text"
+              class="required"
+              rows="3"
+              maxLength="300"
+            />
             <a href="">SEND</a>
           </form>
         </div>
