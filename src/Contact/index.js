@@ -1,8 +1,10 @@
 import "./style.scss";
+import ScrollToTop from "../ScrollToTop";
 
 function Contact() {
   return (
     <>
+      <ScrollToTop />
       <div className="header-section" />
       <section id="contact-page">
         <div className="contact-form gutters">

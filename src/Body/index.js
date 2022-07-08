@@ -2,15 +2,19 @@ import Hero from "../Hero/";
 import Carousel from "../Carousel/";
 import Products from "../Products/";
 import Subscribe from "../Subscribe/";
+import ScrollToTop from "../ScrollToTop";
 
 function Body() {
   return (
-    <div>
-      <Hero />
-      <Carousel />
-      <Products />
-      <Subscribe />
-    </div>
+    <>
+      <ScrollToTop />
+      <div>
+        <Hero />
+        <Carousel />
+        <Products />
+        <Subscribe />
+      </div>
+    </>
   );
 }
 
