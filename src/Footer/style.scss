@@ -122,6 +122,10 @@ footer {
         display: block;
         text-align: center;
     }
+
+    @media (max-width: 380px) {
+        margin-top: 50px;
+    }
     
     nav {
 
