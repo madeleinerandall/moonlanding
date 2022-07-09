@@ -1,5 +1,5 @@
 .header-section {
-    height: 110px;
+    height: 100px;
     width: 100%;
     background-color: #d1aadc;
 }
@@ -10,6 +10,10 @@
 .contact {
     max-width: 600px;
     margin: auto;
+
+    @media (max-width: 420px) {
+        width: 90%;
+    }
 }
 .title {
     display: flex;
@@ -75,6 +79,10 @@
             color: #822c08;
             font-family: "Roboto";
         }
+
+        @media (max-width: 420px) {
+            width: 80%;
+        }
     }
 
     > a {
@@ -85,6 +93,7 @@
         text-align: center;
         text-decoration: none;
         background-color: #822c08;
+        border: 1px solid #822c08;
         width: 100%;
         transition: 200ms;
         padding: 20px 15px;
@@ -94,6 +103,11 @@
             color: #822c08;
             background-color: #feeae7;
             border: 1px solid #822c08;
+
+        }
+
+        @media (max-width: 420px) {
+            width: 85%;
         }
     }
 }

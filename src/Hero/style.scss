@@ -1,7 +1,7 @@
 #hero {
+  position: relative;
   height: 55vw;
   width: 100%;
-  position: relative;
   background-image: url("hero-desktop.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,11 +16,11 @@
   }
 }
 
-
 .box {
   position: absolute;
   top: 80%;
   left: 50%;
+  cursor: pointer;
   transform: translate(-50%, -50%);
 
   @media (max-width: 500px) {
@@ -34,10 +34,10 @@
     display: block;
     width: 20px;
     height: 20px;
+    margin: -10px;
     border-bottom: 2.5px solid white;
     border-right: 2.5px solid white;
     transform: rotate(45deg);
-    margin: -10px;
     animation: animate 2s infinite;
       
     span:nth-child(2) {
@@ -67,31 +67,27 @@
   top: 80%;
   left: 50%;
   transform: translateX(-50%);
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 305px;
+  padding: 15px 15px;
+  font-size: 18px;
+  font-family: "Roboto";
+  text-decoration: none;
+  color: #822c08;
+  letter-spacing: .13em;
+  background-color: #feeae7;
+  cursor: pointer;
+    
   @media (min-width: 415px) {
     display: none;
   }
-
-  > button {
-    height: 80px;
-    width: 325px;
-    background-color: #feeae7;
-    color: #822c08;
-    cursor: pointer;
-    border: none;
-    font-size: 18px;
-    font-family: "Roboto";
-    letter-spacing: .13em;
-    padding: 15px 15px;
-
-    @media (max-width: 350px) {
-      width: 305px;
-    } 
     
-
-    &:hover {
-      background-color: #822c08;
-      color:#feeae7;
-  }
-  }
+  // No hover states in mobile versions 
+  // &:hover {
+  //   background-color: #822c08;
+  //   color:#feeae7;
+  // }
 }

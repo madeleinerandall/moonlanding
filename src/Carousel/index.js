@@ -33,7 +33,7 @@ function Section1() {
   return (
     <section id="section1">
       <div className="section1 gutters">
-        <h1>
+        <h1 id="test-section">
           Ceramics, handmade in Australia to bring the joy of colour into your
           home.
         </h1>
