@@ -1,11 +1,11 @@
 # What
-A mock website for my portfolio for an eCommerce website. .\
+A mock website for my portfolio for an eCommerce website. 
 
 # Highlights
-Built with React, HTML5, SASS (CSS3), Javascript, Unix & Git.\
-Mobile responsive & retina-ready.\
-Uses npm packages such as React Hot Toast and React Router Dom .\
-Code and design by Madeleine Randall (me) .\
+Built with React, HTML5, SASS (CSS3), Javascript, Unix & Git\
+Mobile responsive & retina-ready\
+Uses npm packages such as React Hot Toast and React Router Dom \
+Code and design by Madeleine Randall (me) \
 
 # Getting Started with Create React App
 
