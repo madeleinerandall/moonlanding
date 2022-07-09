@@ -1,7 +1,19 @@
 import "./style.scss";
 import ScrollToTop from "../ScrollToTop";
+import toast from "react-hot-toast";
 
 function Contact() {
+  function handleSubmit(e) {
+    const nameEl = document.getElementById("name");
+    const emailEl = document.getElementById("email");
+    const messageEl = document.getElementById("message");
+    e.preventDefault();
+
+    toast.success("Form data submitted!");
+    nameEl.value = "";
+    emailEl.value = "";
+    messageEl.value = "";
+  }
   return (
     <>
       <ScrollToTop />
@@ -22,17 +34,23 @@ function Contact() {
               </p>
             </div>
           </div>
-          <form className="form">
-            <input placeholder="Name" type="text" class="required" />
-            <input placeholder="Email" type="email" class="required" />
+          <form className="form" onSubmit={handleSubmit}>
+            <input id="name" placeholder="Name" type="text" class="required" />
+            <input
+              id="email"
+              placeholder="Email"
+              type="email"
+              class="required"
+            />
             <textarea
+              id="message"
               placeholder="Messsage"
               type="text"
               class="required"
               rows="3"
               maxLength="300"
             />
-            <a href="">SEND</a>
+            <input type="submit" value="SEND" />
           </form>
         </div>
       </section>

@@ -85,7 +85,7 @@
         }
     }
 
-    > a {
+    > input[type=submit] {
         font-size: 13px;
         letter-spacing: .13em;
         font-family: "Roboto";
@@ -98,6 +98,7 @@
         transition: 200ms;
         padding: 20px 15px;
         margin: 35px 0 60px 0;
+        cursor: pointer;
 
         &:hover {
             color: #822c08;

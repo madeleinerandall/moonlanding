@@ -65,12 +65,21 @@ header {
 
         > .socials {
           margin-left: auto;
-          > a > img {
-            height: 30px;
-            width: auto;
-            cursor: pointer;
-            filter: invert(100%);
-            padding: 0 5px;
+
+          @media (max-width: 414px) {
+            display: none;
+          }
+
+          > a {
+            margin-left: 10px;
+
+            > img {
+              height: 30px;
+              width: auto;
+              cursor: pointer;
+              filter: invert(100%);
+              padding: 0 5px;
+            }
           }
         }
     }
