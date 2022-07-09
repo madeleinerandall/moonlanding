@@ -1,6 +1,6 @@
 import "./style.scss";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import NavBar from "../NavBar/";
 import hamburger from "./hamburger.png";
 import facebook from "./facebook.png";
@@ -10,6 +10,11 @@ import close from "./close.png";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
   function handleMenuOpen() {
     setMenuOpen(!menuOpen);

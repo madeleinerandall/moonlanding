@@ -2,7 +2,12 @@ import "./style.scss";
 import { Link } from "react-router-dom";
 
 function Hero() {
-  function scroll() {}
+  function scroll() {
+    const element = document.getElementById("test-section");
+    element.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
   return (
     <section id="hero">
       <div onClick={scroll} className="box">

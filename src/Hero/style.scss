@@ -16,11 +16,11 @@
   }
 }
 
-
 .box {
   position: absolute;
   top: 80%;
   left: 50%;
+  cursor: pointer;
   transform: translate(-50%, -50%);
 
   @media (max-width: 500px) {
