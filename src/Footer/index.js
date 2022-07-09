@@ -65,7 +65,7 @@ function Footer() {
             <a href="https://www.linkedin.com/in/madeleine-randall-0282b7230/">
               <img src={linkedin} alt="linkedin" />
             </a>
-            <a href="https://github.com/madeleinerandall">
+            <a href="https://github.com/madeleinerandall/moonlanding">
               <img src={git} alt="octocat" />
             </a>
           </div>

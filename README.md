@@ -1,3 +1,13 @@
+What
+The website of a sales coaching consultant in Australia.
+
+Highlights
+Built with Gulp, Nunchucks (HTML), SASS (CSS), jQuery (JS), Atom & Git
+Mobile responsive & retina-ready
+Served on SSD Ubuntu Nginx servers with HTTP2 and HTTPS
+Design by Hannah Sutton
+Code by Jan Werkhoven and Richard Verheyen
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
