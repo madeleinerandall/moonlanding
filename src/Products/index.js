@@ -1,8 +1,8 @@
 import "./style.scss";
 import { Link } from "react-router-dom";
-import c1 from "./carousel1.jpg";
-import c2 from "./carousel2.jpg";
-import c3 from "./carousel3.jpg";
+import c1 from "../Carousel/carousel1.jpg";
+import c2 from "../Carousel/carousel2.jpg";
+import c3 from "../Carousel/carousel3.jpg";
 
 function Products() {
   return (
