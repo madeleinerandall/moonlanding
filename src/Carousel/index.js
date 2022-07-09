@@ -1,5 +1,5 @@
 import "./style.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import c1 from "./carousel1.png";
 import c2 from "./carousel2.png";
 import c3 from "./carousel3.png";
@@ -10,7 +10,7 @@ function Section1() {
 
   return (
     <section id="section1">
-      <div className="section1 gutters">
+      <div className="section-title gutters">
         <h1 id="test-section">
           Ceramics, handmade in Australia to bring the joy of colour into your
           home.

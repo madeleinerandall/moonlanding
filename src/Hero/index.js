@@ -15,6 +15,7 @@ function Hero() {
         <span></span>
         <span></span>
       </div>
+
       <Link
         to="products"
         id="call-to-action-button"
