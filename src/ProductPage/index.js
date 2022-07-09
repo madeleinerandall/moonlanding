@@ -2,9 +2,19 @@ import "./style.scss";
 import product1 from "./carousel1.webp";
 import product2 from "./carousel3.webp";
 import tick from "./tick.png";
+import minus from "./minus.png";
+import plus from "./plus.png";
 import ScrollToTop from "../ScrollToTop";
+import toast from "react-hot-toast";
 
 function ProductPage() {
+  function cart() {
+    toast.success("Purchase added to your imaginary cart!");
+  }
+  function buyNow() {
+    toast.success("Thank you for your imaginary purchase!");
+  }
+
   return (
     <>
       <ScrollToTop />
@@ -26,10 +36,16 @@ function ProductPage() {
               <span>Side Plate</span>
             </div>
             <div className="products-input">
-              <input type="text" />
-              <button>ADD TO CART</button>
+              {/* <button>
+                <img src={minus} alt="minus" />
+              </button> */}
+              <input placeholder="No. of items" type="text" />
+              {/* <button>
+                <img src={plus} alt="plus" />
+              </button> */}
+              <button onClick={cart}>ADD TO CART</button>
             </div>
-            <div id="buy-now-button">
+            <div onClick={buyNow} id="buy-now-button">
               <button>BUY IT NOW</button>
             </div>
             <div id="shipping-info">
