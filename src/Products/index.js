@@ -1,15 +1,15 @@
 import "./style.scss";
 import { Link } from "react-router-dom";
-import c1 from "./carousel1.png";
-import c2 from "./carousel2.png";
-import c3 from "./carousel3.png";
+import c1 from "./carousel1.jpg";
+import c2 from "./carousel2.jpg";
+import c3 from "./carousel3.jpg";
 
 function Products() {
   return (
     <>
       <section id="products">
         <div className="gutters">
-          <img src={c2} alt="first product" />
+          <img src={c2} alt="first product" loading="lazy" />
           <div className="products-text">
             <h2>Visit our store!</h2>
             <p>120 Gertrude St, Fitzroy, Victoria.</p>
@@ -26,13 +26,13 @@ function Products() {
               SHOP
             </Link>
           </div>
-          <img src={c1} alt="first product" />
+          <img src={c1} alt="first product" loading="lazy" />
         </div>
       </section>
 
       <section id="contact">
         <div className="gutters">
-          <img src={c3} alt="first product" />
+          <img src={c3} alt="first product" loading="lazy" />
           <div className="products-text">
             <h2>Contact us</h2>
             <Link id="contact-link" to="contact">
