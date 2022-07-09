@@ -1,12 +1,11 @@
 What
-The website of a sales coaching consultant in Australia.
+A mock website for my portfolio for an eCommerce website. 
 
 Highlights
-Built with Gulp, Nunchucks (HTML), SASS (CSS), jQuery (JS), Atom & Git
+Built with React, HTML5, SASS (CSS3), Javascript, Unix & Git
 Mobile responsive & retina-ready
-Served on SSD Ubuntu Nginx servers with HTTP2 and HTTPS
-Design by Hannah Sutton
-Code by Jan Werkhoven and Richard Verheyen
+Uses npm packages such as React Hot Toast and React Router Dom
+Code and design by Madeleine Randall (me)
 
 # Getting Started with Create React App
 
