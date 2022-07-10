@@ -1,7 +1,12 @@
 .header-section {
     height: 100px;
     width: 100%;
-    background-color: #d1aadc;
+    background-color: rgb(215, 176, 226);
+    
+    @media (max-width: 414px) {
+        height: 60px;
+    }
+    
 }
 #contact-page {
     background-color: #feeae7;
