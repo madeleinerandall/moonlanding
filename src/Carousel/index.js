@@ -1,8 +1,8 @@
 import "./style.scss";
 import { useState } from "react";
-import c1 from "./carousel1.png";
-import c2 from "./carousel2.png";
-import c3 from "./carousel3.png";
+import c1 from "./carousel1.jpg";
+import c2 from "./carousel2.jpg";
+import c3 from "./carousel3.jpg";
 
 function Section1() {
   let [currentSlide, setCurrentSlide] = useState(0);
@@ -31,6 +31,7 @@ function Section1() {
             <img
               key={i}
               src={src}
+              loading="lazy"
               alt={`carousel image ${i + 1}`}
               style={{ transform: `translateX(calc(-100% * ${currentSlide}))` }}
             />
