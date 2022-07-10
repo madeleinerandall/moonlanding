@@ -20,7 +20,7 @@ header {
         left: 30px;
       }
 
-      @media (max-width: 970px) {
+      @media (max-width: 414px) {
         top: 30px;
       }
   }
@@ -38,8 +38,11 @@ header {
         font-size: large;
 
         @media (max-width: 910px) {
-          height: 60px;
+          height: 100px;
           background-color: rgb(215, 176, 226);
+        }
+        @media (max-width: 414px) {
+          height: 60px;
         }
 
         .logo {

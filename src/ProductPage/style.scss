@@ -1,6 +1,11 @@
 #heading-section {
-    height: 110px;
-    background-color: #d1aadc;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(215, 176, 226);
+
+    @media (max-width: 414px) {
+        height: 60px;
+    }
 }
 
 .products-page {
